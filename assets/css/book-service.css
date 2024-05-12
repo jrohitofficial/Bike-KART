@@ -1,0 +1,141 @@
+/*-------------------------------------------------------------------* 
+ Book a Service Page 
+*-------------------------------------------------------------------*/
+
+/* Page Title Area */
+
+
+header {
+    top: 0px;
+}
+
+.heading-bar {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-color-two);
+}
+
+.heading-bar .heading {
+    color: var(--white-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.heading-bar .heading h1 {
+    padding: 80px 0 0 0;
+    margin: 70px 0 20px 0;
+}
+
+.heading-bar .sub-heading {
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-bar .sub-heading span {
+    color: var(--theme-color);
+}
+
+.heading-bar .sub-heading span:hover {
+    color: var(--white-color-two);
+}
+
+
+/* Service Book Contact Form Etc. */
+
+.book-service {
+    display: block;
+    width: 100%;
+    height: 800px;
+    color: var(--white-color);
+    padding: 80px 0px 100px 0px;
+    background: var(--black-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.book-service .sub-heading-text, .book-service .form-section {
+    width: 50%;
+    text-align: center;
+    margin: 0 25%;
+}
+
+.book-service .sub-heading-text {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+    border-left: 1px solid var(--theme-color);
+    padding: 0 0 0 10px;
+    margin-bottom: 20px;
+}
+
+.book-service .form-section .row {
+    display: flex;
+    width: 100%;
+}
+
+.book-service .form-section .row .form-group:not(:last-child) {
+    margin-right: 2%;
+}
+
+.book-service .form-section .row .form-group {
+    width: 32%;
+}
+
+.book-service .form-section form input, .book-service .form-section .row select, .book-service .form-section select {
+    color: var(--white-color);
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    font-weight: 500;
+    background: none;
+    border: 1px dotted;
+}
+
+.book-service .form-section form input::placeholder {
+    padding-left: 20px;
+    color: var(--white-color);
+}
+
+.book-service .form-section form .form-group {
+    margin-bottom: 20px;
+}
+
+.book-service .form-section form textarea {
+    color: var(--white-color);
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    font-weight: 500;
+    background: none;
+    border: 1px dotted;
+}
+
+.book-service .form-section form textarea::placeholder {
+    padding-left: 20px;
+    color: var(--white-color);
+}
+
+.book-service .form-section form #submit {
+    transition: all 0.35s;
+    background: var(--theme-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.book-service .form-section form #submit {
+    transition: all 0.35s;
+    background: var(--theme-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.book-service .form-section form  #submit:hover {
+    color: var(--theme-color);
+    background: var(--white-color);
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--white-color);
+}

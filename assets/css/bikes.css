@@ -1,0 +1,212 @@
+/*-------------------------------------------------------------------* 
+ Bikes Listing Page 
+*-------------------------------------------------------------------*/
+
+/* Page Title Area */
+header {
+    top: 0px;
+}
+
+.heading-bar {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-color-two);
+}
+
+.heading-bar .heading {
+    color: var(--white-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.heading-bar .heading h1 {
+    padding: 80px 0 0 0;
+    margin: 70px 0 20px 0;
+}
+
+.heading-bar .sub-heading {
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-bar .sub-heading span {
+    color: var(--theme-color);
+}
+
+.heading-bar .sub-heading span:hover {
+    color: var(--white-color-two);
+}
+/*-------------------------------------------------------------------*
+ Listed Featured Bike Section Card/Background 
+ *-------------------------------------------------------------------*/
+.featured-bikes {
+    position: relative;
+    padding: 80px 0 100px 0;
+    background: linear-gradient(to bottom, var(--theme-color) 75%, var(--black-color) 75% 100%);
+}
+
+.section-two {
+    background: linear-gradient(to right, var(--black-color), var(--white-color-two), var(--theme-color));
+}
+
+.section-three {
+    background: linear-gradient(to bottom, var(--black-color) 75%, var(--theme-color) 75% 100%);
+}
+
+.featured-bikes .container {
+    position: relative;
+}
+
+.featured-bikes .container .row {
+    display: flex;
+    margin-left: 8.5%;
+}
+
+.featured-bikes .container .featured-header .header-content {
+    text-align: center;
+    margin: 30px;
+}
+
+.featured-bikes .container .featured-header .header-content .sub-heading {
+    color: var(--white-color-two);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.featured-bikes .container .featured-header .header-content .main-heading {
+    position: relative;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.featured-bikes .container .featured-header .header-content .main-heading .colored-text {
+    color: var(--black-color);
+}
+
+.section-three .container .featured-header .header-content .main-heading .colored-text {
+    color: var(--theme-color);
+}
+
+.featured-bikes .container .row .product {
+    width: calc(28% - 20px);
+    margin: 10px 24px 25px 0px;
+    border: 1px solid var(--white-color);
+    border-radius: 7px;
+    background-color: var(--black-color-two);
+    padding: 20px 15px;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.featured-bikes .container .row .product .bike .discount {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px 7px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+.featured-bikes .container .row .product .bike .image {
+    background: linear-gradient(-45deg, var(--white-color) 50%, black 50%);
+}
+
+.featured-bikes .container .row .product .bike .bike-image {
+    height: 14rem;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    padding: 0px 0px 20px;
+    overflow: visible;
+    z-index: 5;
+}
+
+.featured-bikes .container .row .product:hover .bike .bike-image {
+    animation: scaleImage 1.3s forwards;
+}
+
+.featured-bikes .container .row .product .bike .bike-name {
+    display: block;
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.featured-bikes .container .row .product:hover .bike .bike-name a:after {
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 4px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: var(--white-color);
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+
+.featured-bikes .container .row .product:hover .bike:hover .bike-name a:after {
+    width: 185px;
+    margin-left: 8px;
+}
+
+.featured-bikes .container .row .product .bike .bike-details .features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-bikes .container .row .product .bike .bike-details .features .feature {
+    display: flex;
+    margin-bottom: auto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--white-color-two);
+}
+
+.featured-bikes .container .row .product .bike .bike-details .features .feature i {
+    margin-right: 0.5rem;
+    color: var(--theme-color);
+}
+
+.featured-bikes .container .row .product .bike .bike-details .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.featured-bikes .container .row .product .bike .bike-details .prices .current-price {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.featured-bikes .container .row .product .bike .bike-details .prices .current-price .original-price {
+    text-decoration: line-through;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.featured-bikes .container .row .product .bike .bike-details .prices a button {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 14px;
+    line-height: 1px;
+    letter-spacing: 0.5px;
+    border: none;
+    margin-left: 43%;
+}
+/* Triple Arrow Scoll Button */
+.featured-bikes .scroll-btn {
+    position: absolute;
+    top: 77px;
+}

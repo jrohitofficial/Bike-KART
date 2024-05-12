@@ -1,0 +1,211 @@
+/*-------------------------------------------------------------------* 
+ Accessories Listing Page 
+*-------------------------------------------------------------------*/
+
+/* Page Title Area */
+header {
+    top: 0px;
+}
+
+.heading-bar {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-color-two);
+}
+
+.heading-bar .heading {
+    color: var(--white-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.heading-bar .heading h1 {
+    padding: 80px 0 0 0;
+    margin: 70px 0 20px 0;
+}
+
+.heading-bar .sub-heading {
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-bar .sub-heading span {
+    color: var(--theme-color);
+}
+
+.heading-bar .sub-heading span:hover {
+    color: var(--white-color-two);
+}
+
+
+/*-------------------------------------------------------------------*
+  Products Section
+*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*
+  Featured Products Section
+*-------------------------------------------------------------------*/
+
+.products {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--theme-color) 75%, var(--black-color) 75% 100%);
+    height: auto;
+}
+
+.products .header-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products .header-container .sub-heading {
+    color: var(--white-color-two);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.products .header-container .main-heading {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.products .header-container .colored-text {
+    color: var(--black-color);
+}
+
+.products .container {
+    display: flex;
+    position: relative;
+    width: 90%;
+    left: 108px;
+}
+
+.products .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    text-align: center;
+}
+
+.products .container .row:not(:last-child) {
+    margin-right: 20px;
+}
+
+.products .container .one,
+.products .container .three {
+    width: 270px;
+}
+
+.products .container .two {
+    width: 570px;
+    height: 625.5px;
+}
+
+.products .container .row .product {
+    width: 100%;
+    border: 1px solid var(--white-color);
+    border-radius: 7px;
+    background-color: var(--black-color-two);
+    padding: 15px;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-bottom: 20px;
+}
+
+.products .container .row .product .product-image {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.products .container .row .product .product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.products .container .row .product .product-image .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.products .container .row .product:hover .product-image img {
+    transform: rotateY(180deg);
+}
+
+.products .container .row .product:hover .product-image img .original-image {
+    opacity: 0;
+}
+
+.products .container .row .product:hover .product-image .hover-image {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.products .container .row .product .product-image .cart-button {
+    display: none;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.products .container .row .product:hover .product-image .cart-button {
+    display: inline-block;
+    animation: fade-in-up 0.5s ease forwards;
+    opacity: 1;
+}
+
+.products .container .row .product .product-name {
+    font-size: 17px;
+    margin: 0 0 4px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.products .container .row .product .product-description {
+    font-size: 11px;
+    color: var(--white-color-two);
+    margin-bottom: 8px;
+}
+
+.products .container .row .product .product-price {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--theme-color);
+}
+
+.products .container .two .product .product-name {
+    font-size: 30px;
+    margin: 25px 0 15px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.products .container .two .product .product-description {
+    font-size: 17px;
+    color: var(--white-color-two);
+    margin-bottom: 15px;
+}
+
+.products .container .two .product .product-price {
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--theme-color);
+}

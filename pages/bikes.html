@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Basic-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--WebPage Title-->
+    <title>Bikes - BikeKart</title>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/bikes.css" type="text/css" />
+
+    <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon & Bookmark -->
+    <link rel="icon" href="../assets/images/red icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-wave"><img src="../assets/images/icon.png" alt="preloader"></div>
+    </div>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html" title="BikeKart">
+                    <img class="normal" src="../assets/images/light logo.png" alt="bikekart">
+                </a>
+            </div>
+            <div class="navigation">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-submenu">
+                        <a href class="submenu">Bikes <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="submenu-list">
+                            <li><a href="./bikes.html">New Bikes</a></li>
+                            <li><a href="./bikes.html">Find New Bikes</a></li>
+                            <li><a href="./bikes.html">Compare Bikes</a></li>
+                            <li><a href="./bikes.html">Check On-Road Price</a></li>
+                            <li><a href="./bikes.html">Locate Showrooms</a></li>
+                            <li><a href="./bikes.html">Upcoming Bikes</a></li>
+                            <li><a href="./bikes.html">New Launches</a></li>
+                            <li><a href="./bikes.html">Popular Brands</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href class="submenu">Scooters <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="submenu-list">
+                            <li><a href="./scooters.html">Find New Scooters</a></li>
+                            <li><a href="./scooters.html">Electric Scooters</a></li>
+                            <li><a href="./scooters.html">Upcoming Scooters</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href class="submenu">Accessories <i class="fa-solid fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="./accessories.html">Tires</a></li>
+                            <li><a href="./accessories.html">Tools & Maintenance</a></li>
+                            <li><a href="./accessories.html">Riding Gears</a></li>
+                            <li><a href="./accessories.html">Helmets</a></li>
+                            <li><a href="./accessories.html">Protections</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./book-service.html">Book Service</a></li>
+                    <li class="has-submenu">
+                        <a href class="submenu">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="submenu-list">
+                            <li><a href="./blog.html">News</a></li>
+                            <li><a href="./blog.html">Videos & Tips</a></li>
+                            <li><a href="./blog.html">Expert Reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href class="submenu">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                            <li><a href="./single-post.html">Faq's</a></li>
+                            <li><a href="./single-post.html">Privacy Policy</a></li>
+                            <li><a href="./single-post.html">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="icons">
+                    <li class="has-submenu">
+                        <a href><i class="fa fa-search"></i></a>
+                        <ul>
+                            <li><input type="text" id="search" name="search" placeholder="Search Sports Bike..."></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <a href><span class="item-count">0</span>
+                                <i class="fas fa-shopping-cart"></i></a>
+                            <ul>
+                                <li><input type="text" id="items" name="items" disabled value="No products in the cart."></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="heading-bar">
+        <div class="heading">
+            <h1>Bikes</h1>
+        </div>
+        <div class="sub-heading">
+            <a href="/index.html">Home</a>
+            <a>/</a>
+            <a href="#"><span class="colored-text">Bikes</span></a>
+        </div>
+    </section>
+
+
+    <!-- Top Bike Section -->
+    <section class="featured-bikes" id="featured-bikes">
+        <div class="container">
+            <div class="featured-header">
+                <div class="header-content">
+                    <div class="sub-heading">
+                        <span class="sub-heading">YOUR RIDE START HERE.</span>
+                    </div>
+                    <h2 class="main-heading">
+                        <span class="heading">CHOOSE FROM <span class="colored-text"> TOP</span> BIKES</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Yamaha MT 15 V2.png"></a>
+                        <div class="bike-name"><a href="">Yamaha MT 15 V2</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>321cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>29.6Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>169kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 25/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 2.80 LAKH<span class="original-price"> ₹ 3 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-10%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Aprilia Tuareg 660.png"></a>
+                        <div class="bike-name"><a href="">Aprilia Tuareg 660</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>659cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>136kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 15/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15 LAKH<span class="original-price"> ₹ 17 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-05 + 2%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Royal Enfield Classic 350.png"></a>
+                        <div class="bike-name"><a href="">Royal Enfield Classic 350</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>350cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>27Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>195kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 41.55KMPL MiL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.93 LAKH <span class="original-price"> 2.25 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-01%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Tork Kratos R Urban Trim.png"></a>
+                        <div class="bike-name"><a href="">Tork Kratos R Urban Trim</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>140cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>19Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>140kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 70/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.67 LAKH<span class="original-price"> ₹ 1.70 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-08%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Ultraviolette F77.png"></a>
+                        <div class="bike-name"><a href="">Ultraviolette F77</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>250cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 307 km/Charge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 3.80 LAKH <span class="original-price"> ₹ 5.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Kawasaki Ninja ZX-10R.png"></a>
+                        <div class="bike-name"><a href="">Kawasaki Ninja ZX-10R</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>998cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>114.9Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 12KMPL Mil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15.99 LAKH <span class="original-price"> ₹ 16.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section id="scroll-down-button" class="scroll-btn">
+            <a href="#featured-products-two"><span></span><span></span><span></span></a>
+        </section>
+    </section>
+
+
+    <!-- Latest Bike Collection Section -->
+    <section class="featured-bikes section-two" id="featured-bikes-two">
+        <div class="container">
+            <div class="featured-header">
+                <div class="header-content">
+                    <h2 class="main-heading">
+                        <span class="heading">LATEST<span class="colored-text"> COLLECTION</span> ARRIVED</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Kawasaki Ninja ZX-10R.png"></a>
+                        <div class="bike-name"><a href="">Kawasaki Ninja ZX-10R</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>998cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>114.9Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 12KMPL Mil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15.99 LAKH <span class="original-price"> ₹ 16.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-10%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Aprilia Tuareg 660.png"></a>
+                        <div class="bike-name"><a href="">Aprilia Tuareg 660</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>659cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>136kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 15/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15 LAKH<span class="original-price"> ₹ 17 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-05 + 2%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Royal Enfield Classic 350.png"></a>
+                        <div class="bike-name"><a href="">Royal Enfield Classic 350</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>350cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>27Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>195kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 41.55KMPL MiL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.93 LAKH <span class="original-price"> 2.25 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-01%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Tork Kratos R Urban Trim.png"></a>
+                        <div class="bike-name"><a href="">Tork Kratos R Urban Trim</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>140cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>19Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>140kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 70/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.67 LAKH<span class="original-price"> ₹ 1.70 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-08%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Ultraviolette F77.png"></a>
+                        <div class="bike-name"><a href="">Ultraviolette F77</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>250cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 307 km/Charge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 3.80 LAKH <span class="original-price"> ₹ 5.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Yamaha MT 15 V2.png"></a>
+                        <div class="bike-name"><a href="">Yamaha MT 15 V2</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>321cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>29.6Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>169kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 25/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 2.80 LAKH<span class="original-price"> ₹ 3 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <section id="scroll-down-button" class="scroll-btn">
+            <a href="#featured-products-three"><span></span><span></span><span></span></a>
+        </section>
+    </section>
+
+
+    <!-- Value For Money Collection Section -->
+    <section class="featured-bikes section-three" id="featured-bikes-three">
+        <div class="container">
+            <div class="featured-header">
+                <div class="header-content">
+                    <h2 class="main-heading">
+                        <span class="heading">VALUE FOR<span class="colored-text"> MONEY</span>~</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Yamaha MT 15 V2.png"></a>
+                        <div class="bike-name"><a href="">Yamaha MT 15 V2</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>321cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>29.6Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>169kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 25/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 2.80 LAKH<span class="original-price"> ₹ 3 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-10%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Aprilia Tuareg 660.png"></a>
+                        <div class="bike-name"><a href="">Aprilia Tuareg 660</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>659cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>136kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 15/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15 LAKH<span class="original-price"> ₹ 17 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-05 + 2%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Royal Enfield Classic 350.png"></a>
+                        <div class="bike-name"><a href="">Royal Enfield Classic 350</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>350cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>27Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>195kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 41.55KMPL MiL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.93 LAKH <span class="original-price"> 2.25 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-01%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Tork Kratos R Urban Trim.png"></a>
+                        <div class="bike-name"><a href="">Tork Kratos R Urban Trim</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>140cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>19Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>140kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 70/1 Mileage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 1.67 LAKH<span class="original-price"> ₹ 1.70 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-08%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Ultraviolette F77.png"></a>
+                        <div class="bike-name"><a href="">Ultraviolette F77</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>250cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>13.3Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 307 km/Charge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 3.80 LAKH <span class="original-price"> ₹ 5.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <div class="bike">
+                        <span class="discount">-20%</span>
+                        <a href=""><img class="bike-image" src="../assets/images/bikes/Kawasaki Ninja ZX-10R.png"></a>
+                        <div class="bike-name"><a href="">Kawasaki Ninja ZX-10R</a></div>
+                        <div class="bike-details">
+                            <div class="features">
+                                <div class="first">
+                                    <div class="feature">
+                                        <span><i class="fa-brands fa-superpowers"></i>998cc ENGINE</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-bolt"></i>114.9Nm Torque</span>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-scale-balanced"></i>207kg K Weight</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span><i class="fa-solid fa-gauge-high"></i> 12KMPL Mil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices">
+                                <span class="current-price">₹ 15.99 LAKH <span class="original-price"> ₹ 16.50 LAKH</span></span>
+                                <a><button class="book-now">BOOK NOW <i class="fa-solid fa-motorcycle"></i></button></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="about-text">
+                    <h4>ABOUT US</h4>
+                    <div class="footer-logo">
+                        <a href="index.html" title="BikeKart">
+                            <img class="normal" src="../assets/images/light logo.png" alt="bikekart">
+                        </a>
+                    </div>
+                    <p>Dive into a world of top-notch motorcycle and premium
+                        accessories. Elevate your bike's look and performance effortlessly
+                        or get your dream bike with us!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="services">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="./accessories.html">Dirt Bike/OEM Parts</a></li>
+                        <li><a href="./accessories.html">Tires</a></li>
+                        <li><a href="./accessories.html">Maintenance Tools</a></li>
+                        <li><a href="./accessories.html">Riding Gears</a></li>
+                        <li><a href="./accessories.html">Helmets</a></li>
+                        <li><a href="./accessories.html">Protections</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="./single-post.html">Privacy Policy</a></li>
+                        <li><a href="./single-post.html">Refund Policy</a></li>
+                        <li><a href="./single-post.html">Terms of Service</a></li>
+                        <li><a href="./single-post.html">Refurbished Products</a></li>
+                        <li><a href="./single-post.html">Shipping Policies</a></li>
+                        <li><a href="./contact.html">Sell with Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4>CONTACT US</h4>
+                    <h5><i class="fa-solid fa-phone-flip"></i> Phone</h5>
+                    <p>+977 9844221364</p>
+                    <h5><i class="fa-solid fa-envelope"></i> Email</h5>
+                    <p>test@gmail.com</p>
+                    <h5><i class="fa-solid fa-location-dot"></i> Address</h5>
+                    <p>Kathmandu 32,
+                        Koteshwor
+                        XXXXXXXXX,
+                        Nepal</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Copyright Informations -->
+            <div class="copyright-text">
+                <p>&copy; 2023 BikeKart. Made with <span>❤</span> by <a href="https://twitter.com/Rohitsinghop/">Rohit Singh</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

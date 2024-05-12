@@ -1,0 +1,74 @@
+/*-------------------------------------------------------------------*
+  Codes That I Could Add in Future / Testing Purpose
+*-------------------------------------------------------------------*/
+
+/* Bautiful Speedometer Preloader: https://themeholy.com/html/malen/index.html */
+
+/* Bike Finder */
+
+.home .bike-finder {
+    position: absolute;
+    width: 70%;
+    left: 6.7%;
+    top: 90%;
+    background: var(--dark-gray-color);
+    border: 1px solid var(--black-color);
+}
+
+.home .bike-finder h2 {
+    font-size: 18px;
+    margin: 14px 35px 8px 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--theme-color);
+}
+
+.home .bike-finder .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home .bike-finder .container div {
+    display: block;
+    color: var(--white-color-two);
+}
+
+.home .bike-finder .container div:not(:last-of-type) {
+    margin: 0px 18px 10px 0px;
+    width: 28%;
+}
+
+.home .bike-finder .container .selector label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.home .bike-finder .container .selector select {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: 1px solid var(--black-color);
+    background: var(--dark-gray-color);
+    color: var(--white-color-two);
+    border-radius: 6px;
+}
+
+.home .bike-finder .container .selector select option {
+    margin: 25px;
+}
+
+.home .bike-finder .container div .find-button {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    border: none;
+    padding: 8px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+.home .bike-finder .container div .find-button:hover {
+    background-color: var(--white-color);
+    color: var(--theme-color);
+}
